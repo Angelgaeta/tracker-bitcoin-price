@@ -1,6 +1,7 @@
 const url = "https://blockchain.info/ticker";
 
-function recupererPrix() {
+function recupererPrix() { // fonction globale pour actulaliser en temps reel le prix du dernier Bitcoin acheté
+  
   // Créer une requete
   let requete = new XMLHttpRequest(); // Créer un objet
   requete.open("GET", url); // Premier paramètre pour utiliser GET / POST, deuxième paramètre : url
